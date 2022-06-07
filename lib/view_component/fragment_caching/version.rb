@@ -1,6 +1,6 @@
 module ViewComponent
   module FragmentCaching
-    VERSION = '0.1.0'.freeze
+    VERSION = '0.01.002'.freeze
     public_constant :VERSION
   end
 end
