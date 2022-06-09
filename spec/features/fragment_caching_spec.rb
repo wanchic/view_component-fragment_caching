@@ -374,12 +374,19 @@ describe 'fragment caching', type: :feature do
 
   context 'when there are multiple inherited components' do
     before do
-      # binding.pry
       visit '/tracked_dependencies/render_dependencies/vc_multiple_inheritance_view?title=Title 15'
     end
 
-    it 'does not explode' do
+    it 'uses the expected template' do
       expect(page).to be_truthy
+    end
+  end
+
+  context 'when there are html and erb templates in the sidecar files' do
+    it 'what do we want to happen here?' do
+      # Add a `similar_blog_component.html` file adjacent to the similar_blog_component.rb and we get ye olde too many templates error
+      #
+      pending
     end
   end
 end
